@@ -13,14 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x]
+        node-version: [18.x]
     steps:
       - name: 环境初始化
         uses: actions/setup-node@v2
-        with:
-          node-version: 20 # node版本
-      - name: npm安装
-        run: npm install
+      - name: yarn安装
+        run: yarn install
       - name: 验证提交
         uses: actions/checkout@v2
         with:
@@ -34,7 +32,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: HaoduStudio/website
           TARGET_BRANCH: master
-          BUILD_SCRIPT: npm && npm build
+          BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist/
           COMMIT_MESSAGE: Auto Deploy Success
           CNAME: dailynotes.top
