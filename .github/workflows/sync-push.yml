@@ -1,0 +1,27 @@
+name: CheckPush-Website
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .github/*
+      - .gitattributes
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Build and Deploy
+        uses: jenkey2011/vuepress-deploy@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          TARGET_REPO: HaoduStudio/website
+          TARGET_BRANCH: main
+          BUILD_SCRIPT: pnpm && pnpm build
+          BUILD_DIR: docs/.vuepress/dist/
+          COMMIT_MESSAGE: Auto Deploy Success
+          CNAME: dailynotes.top
