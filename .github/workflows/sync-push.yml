@@ -17,8 +17,12 @@ jobs:
     steps:
       - name: 环境初始化
         uses: actions/setup-node@v2
+        with:
+          node-version: '18'
       - name: yarn安装
         run: yarn install
+        with:
+          node-version: '18'
       - name: 验证提交
         uses: actions/checkout@v2
         with:
