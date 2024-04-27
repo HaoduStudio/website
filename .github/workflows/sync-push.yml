@@ -19,7 +19,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 20 # node版本
-          cache: "yarn"
+          cache: "pnpm"
       - name: 验证
         uses: actions/checkout@v2
         with:
@@ -33,7 +33,7 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: HaoduStudio/website
           TARGET_BRANCH: master
-          BUILD_SCRIPT: yarn && yarn build
+          BUILD_SCRIPT: pnpm && pnpm build
           BUILD_DIR: docs/.vuepress/dist/
           COMMIT_MESSAGE: Auto Deploy Success
           CNAME: dailynotes.top
