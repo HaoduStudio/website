@@ -20,6 +20,8 @@ jobs:
 
       - name: Build and Deploy
         uses: jenkey2011/vuepress-deploy@master
+        with:
+          node-version: ${{ matrix.node-version }}
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: HaoduStudio/website
