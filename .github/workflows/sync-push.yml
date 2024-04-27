@@ -19,8 +19,9 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 20 # node版本
-          cache: "pnpm"
-      - name: 验证
+      - name: pnpm安装
+        run: pnpm install
+      - name: 验证提交
         uses: actions/checkout@v2
         with:
           node-version: $
