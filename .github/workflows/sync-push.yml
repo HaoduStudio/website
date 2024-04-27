@@ -21,8 +21,6 @@ jobs:
           node-version: '18'
       - name: yarn安装
         run: yarn install
-        with:
-          node-version: '18'
       - name: 验证提交
         uses: actions/checkout@v2
         with:
