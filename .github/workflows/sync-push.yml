@@ -20,8 +20,8 @@ jobs:
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: HaoduStudio/website
-          TARGET_BRANCH: main
-          BUILD_SCRIPT: pnpm && pnpm build
+          TARGET_BRANCH: master
+          BUILD_SCRIPT: yarn && yarn build
           BUILD_DIR: docs/.vuepress/dist/
           COMMIT_MESSAGE: Auto Deploy Success
           CNAME: dailynotes.top
