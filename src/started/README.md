@@ -37,7 +37,29 @@ icon: forward
 
 <iframe id="dogePlayerFrame" src="https://player.dogecloud.com/web/player.html?vcode=5defbe4ccdf7fd68&userId=2491&autoPlay=false&inFrame=true" allowfullscreen="true" msallowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" allowtransparency="true" scrolling="no" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen" referrerPolicy="unsafe-url"></iframe>
 
-## ADB离线安装（所有版本）
+## 安卓手表工具箱安装（需要ADB）
+
+::: info 为什么要用工具箱安装？
+
+对于大部分不会ADB指令或者有其他操作需求的用户，我们一律推荐类似 `安卓手表ADB实用工具箱` 的实用类软件
+
+因为你可以很直观地完成安装、卸载等操作，不需要英文理解能力，因为内置了大部分报错解读......
+
+![工具箱主页截图](https://shanghai.static.nextsay.cn/2024/04/29/662ed7e8f145e.png)
+
+:::
+
+首先，你需要准备官方apk安装包，随后使用数据线连接你的设备。连接后左侧应该会现实你的设备信息（此处仅为演示，最终效果请以实际为准）
+
+![可怜的某人出去玩忘记带xtc所以最终使用手机作为演示机](https://shanghai.static.nextsay.cn/2024/04/29/662ed8f953897.png)
+
+然后将你的apk文件拖拽到 `安装应用` 的模块上，随后会自动读取文件信息并跳转到工具箱安装界面。
+
+在新的页面中单击 `安装APK` 即可开始自动安装。正常情况下半分钟即可完成安装。
+
+![](https://shanghai.static.nextsay.cn/2024/04/29/662ed9ad051aa.png)
+
+## ADB离线安装（需要ADB）
 
 ::: caution 安全警告
 
@@ -57,11 +79,13 @@ HaoduStudio不承担任何因非法或不规范操作导致的不可逆转的后
 
 使用自带文件管理器打开 `Platform工具包` 目录，在管理器上方输入`cmd`打开命令行。在命令行中输入 `adb devices` 确认是否已经连接了手表，若未连接，请连接后重试(当然你可能没破解啥的)。
 
-![打开adb cmd](https://shanghai.static.nextsay.cn/2024/04/29/662e735b0b5c1.png)
+![在资源管理器的上方路径编辑器中打开cmd](https://shanghai.static.nextsay.cn/2024/04/29/662e735b0b5c1.png)
 
 像这样就证明你的连接有效：
 
 ![](https://shanghai.static.nextsay.cn/2024/04/29/662e74ed56c23.png)
+
+随后输入以下指令即可完成安装：
 
 ```
 adb install -r xxx.apk(需包含文件存放路径，可直接拖动apk文件至cmd内，此时路径会自动识别)
