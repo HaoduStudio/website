@@ -19,17 +19,7 @@ jobs:
         with:
           node-version: 20
           check-latest: false
-          cache: 'yarn'
+          cache: 'npm'
           cache-dependency-path: package.json
       - name: 构建测试
-        uses: jenkey2011/vuepress-deploy@master
-        with:
-          node-version: 20
-        env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: HaoduStudio/website
-          TARGET_BRANCH: master
-          BUILD_SCRIPT: yarn && yarn build
-          BUILD_DIR: docs/.vuepress/dist/
-          COMMIT_MESSAGE: Auto Deploy Success
-          CNAME: dailynotes.top
+        run: npm test
