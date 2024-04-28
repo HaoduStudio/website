@@ -15,10 +15,11 @@ jobs:
       matrix:
         node-version: [18.x]
     steps:
-      - name: 环境初始化
-        uses: actions/setup-node@v2
+      - name: 设置环境
+        uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 'latest'
+          check-latest: false
       - name: yarn安装
         run: yarn install
       - name: 验证提交
