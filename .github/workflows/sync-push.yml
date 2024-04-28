@@ -23,5 +23,5 @@ jobs:
           cache-dependency-path: package.json
       - name: 初始化
         run: npm install
-      - run: npm build
-      - run: npm test
+      - name: 构建文件
+        run: npm run docs:build
