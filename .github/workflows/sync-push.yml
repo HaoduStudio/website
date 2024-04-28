@@ -30,7 +30,7 @@ jobs:
       - name: 构建测试
         uses: jenkey2011/vuepress-deploy@master
         with:
-          node-version: $
+          node-version: 'latest'
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           TARGET_REPO: HaoduStudio/website
