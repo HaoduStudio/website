@@ -22,4 +22,5 @@ jobs:
           cache: 'npm'
           cache-dependency-path: package.json
       - name: 构建测试
-        run: npm test
+        run: npm ci
+      - run: npm test
