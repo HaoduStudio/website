@@ -2,7 +2,7 @@
 home: true
 title: 首页
 icon: home
-heroImage: https://time-img.oss-cn-shanghai.aliyuncs.com/2024/04/27/662d184c447a4.png
+heroImage: https://shanghai.static.nextsay.cn/2024/04/27/662d184c447a4.png
 heroText: 每日手帐
 tagline: 一个具有强大自定义功能的腕上编辑软件🌈
 actions:

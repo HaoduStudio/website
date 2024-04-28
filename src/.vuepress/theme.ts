@@ -12,7 +12,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://time-img.oss-cn-shanghai.aliyuncs.com/2024/04/27/662d184c447a4.png",
+  logo: "https://shanghai.static.nextsay.cn/2024/04/27/662d184c447a4.png",
 
   repo: "HaoduyouduStudio/website",
 
@@ -53,7 +53,7 @@ export default hopeTheme({
       attrs: true,
       codetabs: true,
       component: true,
-      demo: true,
+      demo: false,
       figure: true,
       imgLazyload: true,
       imgSize: true,
