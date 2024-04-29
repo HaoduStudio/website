@@ -1,4 +1,4 @@
-name: CheckPush-Website
+name: CheckPush-Build
 on:
   push:
     branches:
@@ -9,7 +9,7 @@ on:
       - .github/*
       - .gitattributes
 jobs:
-  build-and-deploy:
+  build-online-task:
     runs-on: ubuntu-latest
     steps:
       - name: 验证提交
@@ -23,5 +23,5 @@ jobs:
           cache-dependency-path: package.json
       - name: 初始化
         run: npm install
-      - name: 构建文件
+      - name: 构建测试
         run: npm run docs:build

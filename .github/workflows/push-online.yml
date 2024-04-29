@@ -1,0 +1,43 @@
+name: BuildOnCOS
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .github/*
+      - .gitattributes
+
+jobs:
+  PushToCOS:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Branch
+        uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          check-latest: false
+          cache: 'npm'
+          cache-dependency-path: package.json
+
+      - name: Install Packages
+        run: npm install
+
+      - name: Build project
+        run: npm run docs:build
+      - name: Upload COS
+        uses: zkqiang/tencent-cos-action@v0.1.0
+        with:
+          args: upload -r ./src/.vuepress/dist/ /
+          secret_id: ${{ secrets.SECRET_ID }}
+          secret_key: ${{ secrets.SECRET_KEY }}
+          bucket: ${{ secrets.BUCKET }}
+          region: ap-hongkong
+
