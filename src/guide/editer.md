@@ -1,14 +1,16 @@
-
 ---
 title: 手帐编辑器
 lang: zh-CN
 description: 强大的编辑器
-icon: pen-nib
+icon: pen
 ---
 
 ::: tip 文档完善中
 
 我知道你很急，但你先别急。如果你愿意帮助我们，你可以通过底部 `通过Github编辑` 链接与我们一同撰写文档。
+:::
+
+
 
 ## 手帐编辑器简介
 
