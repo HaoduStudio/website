@@ -6,7 +6,7 @@ heroImage: https://shanghai.static.nextsay.cn/2024/04/27/662d184c447a4.png
 heroText: 每日手帐
 tagline: 一个具有强大自定义功能的腕上编辑软件🌈
 actions:
-  - text: 开始入门
+  - text: 快速上手
     link: /started/
     icon: signs-post
     type: primary
