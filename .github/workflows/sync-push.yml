@@ -1,0 +1,27 @@
+name: CheckPush-Build
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - README.md
+      - LICENSE
+      - .github/*
+      - .gitattributes
+jobs:
+  build-online-task:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 验证提交
+        uses: actions/checkout@v4
+      - name: 设置环境
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          check-latest: false
+          cache: 'npm'
+          cache-dependency-path: package.json
+      - name: 初始化
+        run: npm install
+      - name: 构建测试
+        run: npm run docs:build

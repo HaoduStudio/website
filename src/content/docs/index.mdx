@@ -1,0 +1,51 @@
+---
+title: 欢迎来到每日手帐!
+description: 在这里学习如何上手使用每日手帐软件。
+template: splash
+hero:
+  tagline: 在这里学习如何上手使用每日手帐腕表软件。
+  actions:
+    - text: 快速上手
+      link: /started/
+      icon: right-arrow
+      variant: primary
+    - text: Github
+      link: https://github.com/HaoduStudio/DailyNotes-V3
+      icon: external
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+import { Badge } from '@astrojs/starlight/components';
+
+## 特性
+
+<CardGrid stagger>
+	<Card title="超级编辑器" icon="pencil">
+        <Badge text="Beta" variant="tip"/>在手帐的任意位置添加文字/图片/视频，调整素材的大小与角度。
+	</Card>
+	<Card title="全局搜索引擎" icon="magnifier">
+		用户可以通过指定关键词进行全局搜索找到包含关键词的手帐。
+	</Card>
+	<Card title="更安全的存储结构" icon="seti:db">
+		我们使用全新SQLite存储用户的数据，更安全，更轻量，且支持更多特性。
+	</Card>
+	<Card title="快速迁移" icon="rocket">
+		使用腕表迁移工具，一键迁移数据到新的手表。
+	</Card>
+</CardGrid>
+
+## 社区群组
+
+> 每日手帐(DailyNotes)是一个国际化项目，我们欢迎来自国内外的友人参与项目讨论/项目贡献。
+
+<LinkCard
+    title="Telegram群组(Global)"
+    description="较为开放的言论限制，可以在群内讨论大部分内容。"
+    target="_blank"
+    href="https://t.me/+-Q7lHZCBzSswMThl"
+/>
+
+<CardGrid>
+    <LinkCard title="QQ群组(China)" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=WukBRj_0VjN6svGTmmm1Hoxo2BQCc04h&jump_from=webapi&authKey=mceKrWu4EhEdCHYc1w5LRZJnO2tSeUpuGdKJYLHDxV8/mVhxfOL5j7LFvoLM3oKx" />
+    <LinkCard title="反馈平台" target="_blank" href="https://ans.dailynotes.top/" />
+</CardGrid>
