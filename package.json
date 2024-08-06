@@ -10,8 +10,9 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.25.3",
     "@astrojs/solid-js": "^4.3.0",
+    "@astrojs/starlight": "^0.25.3",
+    "@sentry/astro": "^8.23.0",
     "astro": "^4.10.2",
     "sharp": "^0.32.5",
     "solid-js": "^1.4.3"
