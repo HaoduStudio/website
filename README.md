@@ -2,16 +2,13 @@
 
 [![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
 
-懒得写README了，自己clone下载自己改吧zzz...
+您可以通过更改网站mdx文件来参与文档共创。
 
 
 ## 🧞 命令
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | 首次克隆仓库都需要运行此命令安装依赖                         |
+| `npm run dev`             | 运行后会启动预览服务器在 `localhost:4321`      |
+| `npm run build`           | 运行后会将静态文件生成在 `./dist/`          |
