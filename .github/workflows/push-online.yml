@@ -31,11 +31,11 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: npm run docs:build
+        run: npm run build
       - name: Upload COS
         uses: zkqiang/tencent-cos-action@v0.1.0
         with:
-          args: upload -r ./src/.vuepress/dist/ /
+          args: upload -r ./dist/ /
           secret_id: ${{ secrets.SECRET_ID }}
           secret_key: ${{ secrets.SECRET_KEY }}
           bucket: ${{ secrets.BUCKET }}

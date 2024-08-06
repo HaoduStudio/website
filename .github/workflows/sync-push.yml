@@ -24,4 +24,4 @@ jobs:
       - name: 初始化
         run: npm install
       - name: 构建测试
-        run: npm run docs:build
+        run: npm run build
