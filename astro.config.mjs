@@ -1,12 +1,13 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import solid from '@astrojs/solid-js';
-
 import sentry from "@sentry/astro";
+import node from "@astrojs/node";
+import clerk from "@clerk/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [solid(), sentry({
+  integrations: [clerk(), solid(), sentry({
     dsn: "https://2c75191f8c460efd122bf5b4dc1d6f59@o4507588860575744.ingest.us.sentry.io/4507729891557376",
     sourceMapsUploadOptions: {
       project: "dailynotes-website",
@@ -35,6 +36,8 @@ export default defineConfig({
         slug: 'started/index'
       }]
     }],
-    customCss: ['./src/assets/default.css']
+    customCss: ['./src/assets/default.css'],
+    adapter: node({ mode: "standalone" }),
+    output: "server"
   })]
 });
