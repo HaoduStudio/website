@@ -27,6 +27,7 @@ export default defineConfig({
 					],
 				},
 			],
+			customCss: ['./src/assets/default.css']
 		}),
 	],
 });
