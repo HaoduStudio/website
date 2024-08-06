@@ -1,9 +1,11 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import solid from '@astrojs/solid-js';
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
+		solid(),
 		starlight({
 			title: '每日手帐',
 			locales: {

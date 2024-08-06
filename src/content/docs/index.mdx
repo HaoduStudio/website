@@ -15,6 +15,7 @@ hero:
 ---
 
 import { Card, CardGrid, LinkCard, Badge } from '@astrojs/starlight/components';
+import { ScriptComp } from "../../components/ScriptComp";
 
 ## 特性
 
@@ -48,3 +49,5 @@ import { Card, CardGrid, LinkCard, Badge } from '@astrojs/starlight/components';
     <LinkCard title="QQ群组(China)" target="_blank" href="https://qm.qq.com/cgi-bin/qm/qr?k=WukBRj_0VjN6svGTmmm1Hoxo2BQCc04h&jump_from=webapi&authKey=mceKrWu4EhEdCHYc1w5LRZJnO2tSeUpuGdKJYLHDxV8/mVhxfOL5j7LFvoLM3oKx" />
     <LinkCard title="反馈平台" target="_blank" href="https://ans.dailynotes.top/" />
 </CardGrid>
+
+<ScriptComp client:only="solid-js" />
