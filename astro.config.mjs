@@ -15,6 +15,9 @@ export default defineConfig({
 			social: {
 				github: 'https://github.com/HaoduStudio/website',
 			},
+			editLink: {
+				baseUrl: 'https://github.com/HaoduStudio/website/edit/master/',
+			},
 			sidebar: [
 				{
 					label: '快速上手',
