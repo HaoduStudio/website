@@ -37,7 +37,7 @@ export default defineConfig({
       }]
     }],
     customCss: ['./src/assets/default.css'],
-    adapter: node({ mode: "standalone" }),
-    output: "server"
-  })]
+  })],
+  adapter: node({ mode: "standalone" }),
+  output: "server"
 });
