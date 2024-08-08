@@ -3,7 +3,6 @@ import starlight from '@astrojs/starlight';
 import solid from '@astrojs/solid-js';
 import sentry from "@sentry/astro";
 import node from "@astrojs/node";
-import clerk from "@clerk/astro";
 
 // https://astro.build/config
 export default defineConfig({
