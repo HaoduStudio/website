@@ -7,7 +7,7 @@ import clerk from "@clerk/astro";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [clerk(), solid(), sentry({
+  integrations: [solid(), sentry({
     dsn: "https://2c75191f8c460efd122bf5b4dc1d6f59@o4507588860575744.ingest.us.sentry.io/4507729891557376",
     sourceMapsUploadOptions: {
       project: "dailynotes-website",

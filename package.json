@@ -13,7 +13,6 @@
     "@astrojs/node": "^8.3.2",
     "@astrojs/solid-js": "^4.3.0",
     "@astrojs/starlight": "^0.25.3",
-    "@clerk/astro": "^1.0.8",
     "@sentry/astro": "^8.23.0",
     "astro": "^4.10.2",
     "sharp": "^0.32.5",
