@@ -33,6 +33,10 @@ export default defineConfig({
       {
         label: '安装软件',
         slug: 'started/index'
+      },
+        {
+        label: '创建手帐',
+        slug: 'started/create-first-notes'
       }]
     }],
     customCss: ['./src/assets/default.css'],
