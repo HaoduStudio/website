@@ -51,15 +51,15 @@ import { Aside } from '@astrojs/starlight/components';
 
 首先，你需要准备来自官方渠道的可用apk安装包，随后使用数据线连接你的安卓腕表设备。连接后（如果设备ADB为启用状态且授权计算机操作）左侧会展示你的设备信息（此处仅为演示，最终效果请以实际为准）
 
-![连接后应显示的设备信息（示例）](https://shanghai.static.nextsay.cn/2024/04/29/662ed8f953897.png)
+![连接后应显示的设备信息（示例）](https://cn-sh.static.nextsay.cn/IMAGE/dailynotes_website_images_static/started/toolbox_screenshot_connect_device.png)
 
 然后将你的apk文件拖拽到 `安装应用` 的模块上，随后会自动读取文件信息并跳转到工具箱安装界面。
 
 在新的页面中单击 `安装APK` 即可开始自动安装。正常情况下半分钟即可完成安装。
 
-![安装每日手帐](https://shanghai.static.nextsay.cn/2024/04/29/662ed9ad051aa.png)
+![安装每日手帐](https://cn-sh.static.nextsay.cn/IMAGE/dailynotes_website_images_static/started/toolbox_screenshot_installapks.png)
 
-## ADB离线安装（需要ADB）
+## ADB离线安装
 
 <Aside type="danger" title="破解安全警告">
     **以下内容仅建议 `有刷机能力、有责任、有一定技术、有一定理解能力` 的用户查阅，否则我们只推荐通过应用商店安装程序**
@@ -74,9 +74,9 @@ import { Aside } from '@astrojs/starlight/components';
     并且你还需要准备每日手帐的官方安装包，你可以通过 `Clone源码并本地编译` 获得，或通过 [Github Release](https://github.com/HaoduStudio/DailyNotes/releases) 下载（目前仅提供V2稳定及测试版本）
 </Aside>
 
-使用自带文件管理器打开 `Platform工具包` 目录，在管理器上方输入`cmd`打开命令行。在命令行中输入 `adb devices` 确认是否已经连接了手表，若未连接，请连接后重试(当然你可能没破解啥的)。
+使用自带文件管理器打开 `Platform工具包` 目录，在文件管理器上方输入`cmd`打开命令行。在命令行中输入 `adb devices` 确认是否已经连接了手表，若未连接，请连接后重试(当然你可能没破解啥的)。
 
-![在资源管理器的上方路径编辑器中打开cmd](https://shanghai.static.nextsay.cn/2024/04/29/662e735b0b5c1.png)
+![在资源管理器的上方路径编辑器中打开cmd](https://cn-sh.static.nextsay.cn/IMAGE/dailynotes_website_images_static/started/platform_tools_open.png)
 
 像这样就证明你的连接有效：
 
