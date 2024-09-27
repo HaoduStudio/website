@@ -38,7 +38,11 @@ export default defineConfig({
         label: '创建手帐',
         slug: 'started/create-first-notes'
       }]
-    }],
+    },
+      {
+        label: '团队信息',
+        slug: 'team'
+      }],
     customCss: ['./src/assets/default.css'],
   })],
   adapter: node({ mode: "standalone" }),
